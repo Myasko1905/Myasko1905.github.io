@@ -208,5 +208,9 @@ def product5():
     diff = diff.days
     return render_template('product5.html', action_name='Осенние скидки!', end_date=diff, lucky_num=num)
 
+@app.route('/ad')
+def ad():
+    return render_template('ad.html')
+
 if __name__ == "__main__":
     app.run()
