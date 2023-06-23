@@ -3,9 +3,7 @@
   <head> 
     <meta charset="UTF-8"> 
     <link rel="stylesheet" href="/static/css/style.css">
-    {% block head %}
         <title>Главная страница</title>
-    {% endblock %}
   </head>
   <body> 
     <header>
@@ -17,28 +15,27 @@
         <button><a href="/logout">Выход</a></button>
       </div>
     </header>
-    {% block content %}
     <h1 align=center>Товары месяца</h1>
         <div class="main">
             <div class='card'>
                 <a href="/product1">
-                    <img src="/static/images/noni.jpg" width="300" height="300">
-                    <p class "prom">Распродажа перфораторов!<p>
+                    <img src="/static/images/kolbasa.jpg" width="300" height="300">
+                    <p class "prom">Распродажа свежей колбасы!<p>
                 </a>
                 
             </div>            
          <div class="main"> 
             <div class='card'>
                 <a href="/product2">
-                    <img src="/static/images/drel.png" width="300" height="300">
-                    <p class = "prom">Распродажа!<p>
+                    <img src="/static/images/vyalen.jpg" width="300" height="300">
+                    <p class = "prom">Вкусное вяленое мясо!<p>
                 </a>
             </div>
           <div class="main"> 
             <div class='card'>
                 <a href="/product3">
-                    <img src="/static/images/sverl.jpg" width="300" height="300">
-                    <p class = "prom">Сверла по низкой цене!<p>
+                    <img src="/static/images/netu.jpg" width="300" height="300">
+                    <p class = "prom">Сушеные бананы!<p>
                 </a>
              </div>
            <div class="main"> 
@@ -56,7 +53,6 @@
              </div>
    
         
-        
-    {% endblock %}
+      
   </body> 
 </html> 
